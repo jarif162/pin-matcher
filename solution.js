@@ -55,6 +55,10 @@ function checkPin() {
     submitbtn.style.backgroundColor = "green";
     submitbtn.disabled = true;
     generatePinBtn.disabled = true;
+  } else if (generatedPinInput.value === "" && keypadValue.value) {
+    wrongPin.style.display = "block";
+    submitbtn.style.backgroundColor = "red";
+    handleTryLeft();
   } else {
     console.log("wrong pin");
     wrongPin.style.display = "block";
