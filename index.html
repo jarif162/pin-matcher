@@ -8,50 +8,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="pin-generator half-width">
-                    <input class="form-control  generated-Pin "     type="text" >
-                    <button class="generate-btn" >Generate Pin</button>
+    <div className="container">
+        <div className="row">
+            <div className="col-md-6">
+                <div className="pin-generator half-width">
+                    <input className="form-control  generated-Pin "     type="text" >
+                    <button className="generate-btn" >Generate Pin</button>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="input-section half-width">
-                    <input class="form-control show-value" type="text" >
-                    <div class="numbers">
-                        <div class="calc-body">
-                            <div class="calc-button-row">
-                              <div class="button " onclick="keypad(this.innerText)">7</div> 
-                              <div class="button " onclick="keypad(this.innerText)">8</div>
-                              <div class="button" onclick="keypad(this.innerText)">9</div>
+            <div className="col-md-6">
+                <div className="input-section half-width">
+                    <input className="form-control show-value" type="text" >
+                    <div className="numbers">
+                        <div className="calc-body">
+                            <div className="calc-button-row">
+                              <div className="button " onclick="keypad(this.innerText)">7</div> 
+                              <div className="button " onclick="keypad(this.innerText)">8</div>
+                              <div className="button" onclick="keypad(this.innerText)">9</div>
                             </div>
-                            <div class="calc-row">
-                              <div class="button "  onclick="keypad(this.innerText)">4</div>
-                              <div class="button " onclick="keypad(this.innerText)">5</div>
-                              <div class="button " onclick="keypad(this.innerText)" >6</div>
+                            <div className="calc-row">
+                              <div className="button "  onclick="keypad(this.innerText)">4</div>
+                              <div className="button " onclick="keypad(this.innerText)">5</div>
+                              <div className="button " onclick="keypad(this.innerText)" >6</div>
                             </div>
-                            <div class="calc-ow">
-                              <div class="button " onclick="keypad(this.innerText)">1</div>
-                              <div class="button " onclick="keypad(this.innerText)" >2</div>
-                              <div class="button " onclick="keypad(this.innerText)">3</div>
+                            <div className="calc-ow">
+                              <div className="button " onclick="keypad(this.innerText)">1</div>
+                              <div className="button " onclick="keypad(this.innerText)" >2</div>
+                              <div className="button " onclick="keypad(this.innerText)">3</div>
                             </div>
-                            <div class="calc-row">
-                                <div class="button" id="removeBtn"   onclick="removeSingleDigit()" > < </div>
-                                <div class="button" onclick="keypad(this.innerText)">0</div>
-                                <div class="button"  onclick="keypad(this.innerText)">C</div>
+                            <div className="calc-row">
+                                <div className="button" id="removeBtn"   onclick="removeSingleDigit()" > < </div>
+                                <div className="button" onclick="keypad(this.innerText)">0</div>
+                                <div className="button"  onclick="keypad(this.innerText)">C</div>
                             </div>
                             <div>
-                                <button type="submit" class="submit-btn" >Submit</button>
-                                <p class="action-left"><span id="tryLeft"> 3 </span> try left</p>
+                                <button type="submit" className="submit-btn" >Submit</button>
+                                <p className="action-left"><span id="tryLeft"> 3 </span> try left</p>
                             </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="notify-section">
-            <p class="notify wrong-pin" >❌ Pin Didn't Match, Please try again</p>
-            <p class="notify correct-pin" >✅ Pin Matched... Secret door is opening for you</p>
+        <div className="notify-section">
+            <p className="notify wrong-pin" >❌ Pin Didn't Match, Please try again</p>
+            <p className="notify correct-pin" >✅ Pin Matched... Secret door is opening for you</p>
         </div>
            </div>
 
